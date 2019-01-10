@@ -1,0 +1,18 @@
+#to create a mutiple files
+---
+ - hosts: webservers
+   tasks:
+   - name: To create mutiple files
+     file:
+       path: /opt/{{ item }}
+       state: touch
+       mode: 0777
+       owner: root
+     with_items:
+     - int1.txt
+     - int2.txt
+     - int3.txt
+     - int4.txt 
+      
+        
+

@@ -1,0 +1,10 @@
+---
+ - hosts: webservers
+   tasks:
+   - name: Create a new file with adding permissions
+     file:
+       path: "/opt/perm1.txt"
+       state: touch
+       mode: 0777
+       owner: root
+       group: root

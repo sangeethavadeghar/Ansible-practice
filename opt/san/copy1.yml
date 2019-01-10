@@ -1,0 +1,11 @@
+---
+ - hosts: webservers
+   tasks:
+   - name: Ansible playbook to add the content of  the file
+     copy:
+       dest: "/opt/devops.html"
+       content: | 
+         Sairaj
+         Sangeetha
+         prithvi
+         udayraj

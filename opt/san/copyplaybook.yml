@@ -1,0 +1,11 @@
+#Play book to copy the content of the file
+---
+ - hosts: webservers
+   name: This playbook will create file helloworld.html
+   tasks:
+     copy:
+      src: /opt/san
+      dest: /etc/san
+      owner: root
+      group: root
+      mode: 0644
