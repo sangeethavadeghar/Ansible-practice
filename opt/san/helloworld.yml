@@ -13,7 +13,7 @@
    tasks:
     - name: To create a helloworld.html in remote servers
       file:
-        path:  /opt/helloworld.html
+        path:  /opt/helloworld1.html
         state: touch 
         owner: root
         group: root
